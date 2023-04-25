@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tacos Primeros Online Ordering</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="./stylecss.css" rel="stylesheet">
+        <style>
+            header {
+                text-align: center;
+            }
+            table {
+                margin: auto;
+            }
+            th, td {
+                padding: 10px;
+            }
+            th {
+                background-color: #ff0000ea;
+                color: white;
+            }
+        </style>
+    </head>
+<body>
+	<header>
+		<h1>Tacos Primeros Online Ordering</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="locations.html">Locations</a></li>
+				<li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html">Order Now!</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h2>Order Online</h2>
+		<form action="#">
+			<label for="taco">Choose your taco:</label>
+			<select id="taco" name="taco">
+				<option value="$3.50">Taco de Pescado</option>
+				<option value="$3.00">Taco de Carne Asada</option>
+				<option value="$2.50">Taco del Pollo</option>
+				<option value="$2.50">Taco al Pastor</option>
+			</select>
+			<label for="ingredients">Add ingredients:</label>
+			<select id="ingredients" name="ingredients">
+				<option value="none">None</option>
+				<option value="guacamole">Guacamole</option>
+				<option value="sour-cream">Sour Cream</option>
+				<option value="pico-de-gallo">Pico de Gallo</option>
+				<option value="cheese">Cheese</option>
+			</select>
+			<label for="0.00">Price:</label>
+			<input type="text" id="price" name="price" readonly>
+			<br>
+			<input type="submit" value="Add to Cart">
+		</form>
+		<p><strong>Click here for catering or large events:</strong> <a href="contact.html" style="background-color: black">Bulk | Catering</a></p>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Tacos Primeros Food Truck. All rights reserved.</p>
+	</footer>
+</body>
+</html>

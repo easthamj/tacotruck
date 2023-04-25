@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Locations</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="./stylecss.css" rel="stylesheet">
+	<style>
+		table {
+			margin: 0 auto;
+			border-collapse: collapse;
+			text-align: center;
+			width: 80%;
+			max-width: 1000px;
+			font-size: 18px;
+			table-layout: fixed;
+		}
+
+		th, td {
+			padding: 10px;
+			border: 1px solid #ccc;
+			background-color: #f2f2f2;
+			transition: background-color 0.3s ease-in-out;
+			cursor: pointer;
+		}
+
+		th {
+			background-color: #444;
+			color: white;
+		}
+
+		th:hover, td:hover {
+			background-color: #ddd;
+		}
+
+		a {
+			color: #ffffff;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Locations</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="locations.html">Locations</a></li>
+				<li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html">Order Now!</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<table>
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>Event</th>
+					<th>Location</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr onclick="window.location.href = 'http://www.example.com/event1';">
+					<td>June 10th-12th</td>
+					<td>Summer Festival</td>
+					<td>Central Park</td>
+				</tr>
+				<tr onclick="window.location.href = 'http://www.example.com/event2';">
+					<td>July 4th</td>
+					<td>Fireworks Extravaganza</td>
+					<td>City Stadium</td>
+				</tr>
+				<tr onclick="window.location.href = 'http://www.example.com/event3';">
+					<td>August 20th-22nd</td>
+					<td>Food Truck Rally</td>
+					<td>Downtown Square</td>
+				</tr>
+				<tr onclick="window.location.href = 'http://www.example.com/event4';">
+					<td>September 3rd-5th</td>
+					<td>Labor Day Weekend Festival</td>
+					<td>Beachfront Park</td>
+				</tr>
+				<tr onclick="window.location.href = 'http://www.example.com/event5';">
+					<td>October 15th-17th</td>
+					<td>Autumn Harvest Festival</td>
+					<td>County Fairgrounds</td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Tacos Primeros Food Truck. All rights reserved.</p>
+	</footer>
+</body>
+</html>
